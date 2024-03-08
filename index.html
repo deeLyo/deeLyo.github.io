@@ -1,14 +1,81 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.3">
-  <style type="text/css">
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { dark: '#282979', light: '#3141AF' },
+          }
+        },
+        fontFamily: {
+          sans: ['Roboto', 'sans-serif'],
+          archivo: ['Archivo Black', 'sans-serif']
+        }
+      }
+    }
+  </script>
 </head>
 <body>
+  <section>
+    <div class="max-w-screen-lg mx-auto py-10 px-4 flex justify-between items-center">
+      <img src="http://placekitten.com/125/75" alt="">
+      <h1 class="flex gap-4 flow-col font-sans">
+        <div>Johan lundström</div>
+        <div>Portfolio</div>
+      </h1>
+    </div>
+    <div class="bg-gradient-to-r from-navy-dark to-navy-light">
+      <div class="max-w-screen-lg py-16 px-4 mx-auto flex justify-between">
+        <div class="flex flex-col justify-end">
+          <h3 class="uppercase font-archivo text-base text-gray-200/70">UX Design Lead</h3>
+          <h2 class="font-sans font-bold py-2 text-4xl text-white/90">112 app</h2>
+          <h4 class="font-sans text-base text-white/90">A very important app</h4>
+        </div>
+        <img src="http://placekitten.com/440/380" alt="">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="max-w-screen-lg mx-auto py-20 px-4 bg-white grid grid-cols-1 lg:grid-cols-4">
+      <div class="lg:col-span-4 pb-10">
+        <h3 class="font-archivo text-base text-navy-dark/90">01</h3>
+        <h2 class="font-sans font-bold text-4xl text-black/90">Project</h2>
+      </div>
+      <div>
+        <ul class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-4 font-sans text-base text-black/90">
+          <li>
+            <h4 class="font-bold">Date</h4>
+            <p>Jan 2019 — Jun 2021</p>
+          </li>
+          <li>
+            <h4 class="font-bold">Client</h4>
+            <p>SOS Alarm AB</p>
+          </li>
+          <li>
+            <h4 class="font-bold">Role</h4>
+            <p>UX Design Lead</p>
+          </li>
+          <li>
+            <h4 class="font-bold">Source</h4>
+            <p>App / Editor web / Digital service</p>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3">
+        <h4 class="font-bold mb-2">Summary</h4>
+        <p class="mb-4">SOS Alarm operates the Swedish emergency number 112. Their vision is to create a safer Sweden. SOS Alarm is providing the general public with assistance and information in times of need. This is how their life-saving app was created.</p>
+        <p>I worked as a lead designer doing the design process planning, research, concept design, user and target group interviews/testing, UI design and delivering together with the developers as part of an agile team.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
